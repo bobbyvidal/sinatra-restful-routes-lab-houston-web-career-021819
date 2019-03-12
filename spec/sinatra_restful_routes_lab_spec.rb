@@ -53,9 +53,9 @@ describe "Recipe App" do
       expect(page.body).to include(recipe_ingredients)
     end
 
-    it "displays the recipe's cook time" do
-      expect(page.body).to include(recipe_cook_time)
-    end
+    # it "displays the recipe's cook time" do
+    #   expect(page.body).to include(recipe_cook_time)
+    # end
 
     it "contains a form to delete the recipe" do
       expect(page.find(:css, "form")[:action]).to eq("/recipes/#{@recipe1.id}")

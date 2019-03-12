@@ -1,0 +1,10 @@
+<html>
+    <body>
+        <ul>
+        <% @recipes.each do | recipe | %>
+            <li><%= recipe.name%></li>
+            <li> <a href = "/recipes/<%=recipe.id%>"> This Recipes link </a></li>
+        <% end %>
+        </ul>
+    </body>
+</html>
